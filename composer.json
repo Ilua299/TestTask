@@ -1,0 +1,5 @@
+{
+    "require": {
+        "phpquery/phpquery": "^0.0.4"
+    }
+}
