@@ -15,7 +15,6 @@ class parser
     }
     public function save($dbname,$columns,$values){
         $columnsstring = implode(",",$columns);
-        //$valuesstring = implode("','",$values);
         Yii::$app->db->createCommand("INSERT IGNORE INTO ".$dbname." (".$columnsstring.") VALUES (:value0,:value1,:value2,:value3,:value4)")
             ->bindValue('value0', $values[0])
             ->bindValue('value1', $values[1])
